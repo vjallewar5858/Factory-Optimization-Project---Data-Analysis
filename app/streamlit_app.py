@@ -12,7 +12,7 @@ from sklearn.preprocessing import StandardScaler
 import warnings
 warnings.filterwarnings("ignore")
 
-# ── Backward-compatible caching (works on Streamlit < 1.18 too) ──
+# ── Backward-compatible caching ──
 if not hasattr(st, 'cache_data'):
     st.cache_data     = st.cache
 if not hasattr(st, 'cache_resource'):
